@@ -56,114 +56,70 @@ body {
   letter-spacing: 0.03em;
 }
 
-.modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-bottom: 12px;
-}
-
-.form {
-  width: 448px;
-  margin: 0 auto;
-}
-
-.form-field {
-  position: relative;
-  margin-bottom: 10px;
+.footer-input {
+  background-color: rgb(97, 97, 141);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  align-items: baseline;
 }
 
-.form-field input {
-  margin: 0;
-  padding: 11px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding-left: 42px;
-  outline: none;
-}
-
-.form-field label {
-  margin-bottom: 4px;
-}
-
-.form-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  display: inline-block;
-}
-
-.form-input:focus {
-  border-color: var(--accent-color);
-}
-
-.form-input:focus ~ .form-icon {
-  fill: var(--accent-color);
-}
-
-.form-comment {
+.input-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--container-bg-color);
   margin-bottom: 20px;
 }
 
-.form-comment textarea {
-  outline: none;
-  padding: 12px 16px;
+.input-container {
+  display: flex;
+  /* align-items: center; */
 }
 
-textarea {
-  resize: none;
-  width: 100%;
-  width: 448px;
-  height: 120px;
-}
-
-.form-comment textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-comment textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
+.input-container input {
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
 }
 
-.form-check {
-  margin-bottom: 30px;
+.input-container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 
-.form-accent {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-
-.form-button {
-  display: block;
-  background-color: var(--accent-color);
+.input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
   color: var(--container-bg-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: transparent;
-  min-width: 200px;
-  padding: 10px 52px;
-  text-align: center;
-  margin: 0 auto;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
-.modal {
-  width: 500px;
-  margin: 300px;
+.input-img {
+  fill: currentColor;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-img:hover {
+  transform: translateX(10px);
 }

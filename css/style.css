@@ -636,17 +636,18 @@ span.footer-logo-accent {
 
 .input-img {
   fill: currentColor;
+  transition: transform 500ms var(--transition-timing-function),
+    rotate 500ms var(--transition-timing-function);
 }
 
-/* .input-button::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  background-image: url(/images/svg/paperplane.svg);
-} */
+.input-button:hover {
+  background-color: var(--accent-hover-color);
+}
+
+.input-button:hover > .input-img {
+  transform: translateX(10px) rotate(10deg);
+}
+
 /* -----------------Portfolio---------------- */
 
 .portfolio {
