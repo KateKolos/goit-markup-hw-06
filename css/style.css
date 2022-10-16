@@ -836,8 +836,6 @@ span.footer-logo-accent {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
   margin-bottom: 12px;
 }
 
@@ -888,10 +886,6 @@ span.footer-logo-accent {
 /* .form-input:hover ~ .form-icon, */
 .form-input:focus ~ .form-icon {
   fill: var(--accent-color);
-}
-
-.form-comment {
-  margin-bottom: 20px;
 }
 
 textarea {
