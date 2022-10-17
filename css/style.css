@@ -266,13 +266,11 @@ header.top-page {
 .features {
   padding-top: 94px;
   padding-bottom: 47px;
-  /* border: 1px solid red; */
 }
 
 .features-link {
   display: flex;
   gap: 30px;
-  /* border: 1px solid red; */
 }
 
 .features-item {
@@ -308,7 +306,6 @@ header.top-page {
 .work {
   padding-top: 47px;
   padding-bottom: 94px;
-  /* border: 1px solid red; */
 }
 .work-title {
   margin-bottom: 50px;
@@ -601,7 +598,7 @@ span.footer-logo-accent {
   width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
-  color: var(--secondary-text-color);
+  color: var(--button-bg-color);
 }
 
 .input-container input::placeholder {
@@ -849,8 +846,12 @@ span.footer-logo-accent {
   flex-direction: column;
 }
 
-.form-field:not(last-child) {
+.form-field:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.form-field.comment {
+  margin-bottom: 0;
 }
 
 label {
@@ -925,6 +926,7 @@ textarea::placeholder {
   justify-content: center;
   margin-bottom: 30px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .checkbox-label {
@@ -973,7 +975,7 @@ textarea::placeholder {
 .checkbox-accent {
   color: var(--accent-color);
   text-decoration: underline;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 .form-button {
